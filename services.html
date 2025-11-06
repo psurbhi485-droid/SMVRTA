@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HealthAI | Services</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<header>
+  <img src="Gemini_Generated_Image_qjoxeeqjoxeeqjox.png" class="logo">
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="services-section">
+  <marquee class="moving-bar">AI Diagnosis • Diet Chart Suggestion • Nearby Hospitals • Appointment Alert</marquee>
+  
+  <div class="tabs">
+    <button class="tab-btn active" onclick="openTab('diagnosis')">AI Diagnosis</button>
+    <button class="tab-btn" onclick="openTab('diet')">Diet Chart</button>
+    <button class="tab-btn" onclick="openTab('hospital')">Nearby Hospital</button>
+    <button class="tab-btn" onclick="openTab('appointment')">Appointment Alert</button>
+  </div>
+
+  <div id="diagnosis" class="tab-content active">
+    <h2>AI Health Diagnosis</h2>
+    <p>Upload a report or describe your symptoms to get instant AI-based health predictions.</p>
+    <input type="file" id="reportFile">
+    <textarea id="manualSymptoms" placeholder="Or type your symptoms..."></textarea>
+    <button onclick="simulateDiagnosis()">Analyze</button>
+    <div id="diagnosisResult"></div>
+  </div>
+
+  <div id="diet" class="tab-content">
+    <h2>AI Diet Suggestion</h2>
+    <select id="dietGoal">
+      <option value="gain">Gain Weight</option>
+      <option value="lose">Lose Weight</option>
+      <option value="maintain">Maintain Weight</option>
+    </select>
+    <button onclick="generateDiet()">Get Diet Plan</button>
+    <div id="dietResult"></div>
+  </div>
+
+  <div id="hospital" class="tab-content">
+    <h2>Nearby Hospital Suggestion</h2>
+    <p>Click below to detect your location and find emergency hospitals nearby.</p>
+    <button onclick="findHospital()">Find Hospitals</button>
+    <div id="hospitalResult"></div>
+  </div>
+
+  <div id="appointment" class="tab-content">
+    <h2>Appointment Alert</h2>
+    <p>Stay updated with your next checkup or doctor appointment reminder.</p>
+    <input type="datetime-local" id="appointmentTime">
+    <button onclick="setAppointment()">Set Alert</button>
+    <div id="appointmentResult"></div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 HealthAI</p>
+</footer>
+</body>
+</html>

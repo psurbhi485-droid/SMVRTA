@@ -1,0 +1,135 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f6f9fc;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #007bff;
+  padding: 10px 40px;
+}
+
+.logo {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li .dropdown {
+  display: none;
+  position: absolute;
+  background: white;
+  padding: 10px;
+}
+
+nav ul li:hover .dropdown {
+  display: block;
+}
+
+.home-section {
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  text-align: center;
+  background: rgba(0,0,0,0.5);
+  padding: 40px;
+  color: white;
+  border-radius: 10px;
+}
+
+.btn {
+  background: #00c896;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.tab-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.tab-btn.active {
+  background: #00c896;
+}
+
+.tab-content {
+  display: none;
+  padding: 20px;
+}
+
+.tab-content.active {
+  display: block;
+  background: white;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.result-box {
+  background: #eef7ff;
+  padding: 10px;
+  margin-top: 10px;
+  border-left: 4px solid #007bff;
+}
+
+footer {
+  background: #007bff;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.login-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-box {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.moving-bar {
+  background: #00c896;
+  color: white;
+  padding: 10px;
+}
