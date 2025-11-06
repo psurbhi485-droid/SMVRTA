@@ -35,6 +35,3 @@ To create an AI-powered healthcare companion that makes medical assistance acces
 **AI Integration:** OpenAI API / Hugging Face API  
 **Tools Used:** Visual Studio Code, Live Server  
 
----
-
-## 📁 Folder Structure
